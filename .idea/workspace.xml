@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8bd83e6c-cfd2-4634-a583-298b6ca57a5d" name="默认的" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Hi.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hi.html" afterPath="$PROJECT_DIR$/Hi.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="test02.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -49,6 +50,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/holle.html" />
+        <option value="$PROJECT_DIR$/Hi02.html" />
+        <option value="$PROJECT_DIR$/Hi.html" />
       </list>
     </option>
   </component>
@@ -142,7 +145,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="574" y="51" width="805" height="734" extended-state="1" />
+    <frame x="574" y="51" width="805" height="734" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
