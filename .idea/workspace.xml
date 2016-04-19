@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8bd83e6c-cfd2-4634-a583-298b6ca57a5d" name="默认的" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Hi.html" />
-    </list>
+    <list default="true" id="8bd83e6c-cfd2-4634-a583-298b6ca57a5d" name="默认的" comment="" />
     <ignored path="test02.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -49,6 +47,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/holle.html" />
+        <option value="$PROJECT_DIR$/Hi02.html" />
+        <option value="$PROJECT_DIR$/Hi.html" />
       </list>
     </option>
   </component>
