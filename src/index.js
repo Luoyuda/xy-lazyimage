@@ -105,7 +105,6 @@ class LazyImage {
   inViewport(el){
     const { vw, vh } = util.getVwVh(this.container)
     const { top, right, bottom, left } = el.getBoundingClientRect()
-    console.log(this.diffLeft, right)
     return (top - vh < this.diffTop && bottom > this.diffTop) && (left - vw < this.diffLeft && right > this.diffLeft)
   }
   initImages(image) {
