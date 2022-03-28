@@ -1,12 +1,13 @@
 {
   "name": "xy-lazyimage",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "懒加载图片插件",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup -c"
   },
+  "homepage": "https://github.com/Luoyuda/xy-lazyimage",
   "author": "xiayuchen",
   "license": "ISC",
   "devDependencies": {
