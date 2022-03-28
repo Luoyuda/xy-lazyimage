@@ -1,6 +1,6 @@
 {
   "name": "xy-lazyimage",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "懒加载图片插件",
   "main": "src/index.js",
   "module": "src/index.js",
