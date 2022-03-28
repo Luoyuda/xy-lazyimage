@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>lazy</title>
+  <style>
+    img{
+      width: 300px;
+      min-height: 300px;
+      border-radius: 5px;
+      background-color: #ddd;
+      margin: 10px;
+    }
+    .bg{
+      width: 300px;
+      height: 300px;
+      border-radius: 5px;
+      background-color: #eee;
+      margin: 10px;
+    }
+    .data{
+      width: 100%;
+      overflow: scroll;
+    }
+    #data{
+      display: flex;
+      width: 10000px;
+    }
+  </style>
+</head>
+<body>
+  <div id="app"></div>
+  <div class="data">
+    <div id="data"></div>
+  </div>
+  <script>
+    window.onload = function() {
+      let app = document.getElementById("app");
+      let data = document.getElementById("data");
+      let src = 'https://p9-passport.byteacctimg.com/img/user-avatar/fbf0dad2f64546b5718cb7e502e92c7b~1000x1000.image'
+      let lazyHtml = new Array(20).fill(0).reduce((prev, cur, index) => {
+        return prev + `<img class='img' index=${index} data-src='${src}?index=${+new Date() + index}'>`
+      }, '')
+      let lazyBackgroundHtml = new Array(20).fill(0).reduce((prev, cur, index) => {
+        return prev + `<div class='bg' index=${index} style='background-position: center' data-background-image='${src}?index=${+new Date() + index}'></div>`
+      }, '')
+      app.innerHTML = lazyHtml + lazyBackgroundHtml
+      data.innerHTML = lazyHtml + lazyBackgroundHtml
+      // setTimeout(() => {
+      //   window.lazyImage = new LazyImage({
+      //     el: '.data'
+      //   })
+      //   window.lazyImage = new LazyImage({
+      //     el: '#app',
+      //   })
+      // })
+    }
+  </script>
+  <!-- <script src="./index.js"></script> -->
+</body>
+</html>
