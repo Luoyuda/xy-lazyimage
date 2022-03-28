@@ -3,6 +3,8 @@
   "version": "1.0.2",
   "description": "懒加载图片插件",
   "main": "src/index.js",
+  "module": "src/index.js",
+  "browser": "xy-lazyimage.min.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup -c"

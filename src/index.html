@@ -48,16 +48,16 @@
       }, '')
       app.innerHTML = lazyHtml + lazyBackgroundHtml
       data.innerHTML = lazyHtml + lazyBackgroundHtml
-      // setTimeout(() => {
-      //   window.lazyImage = new LazyImage({
-      //     el: '.data'
-      //   })
-      //   window.lazyImage = new LazyImage({
-      //     el: '#app',
-      //   })
-      // })
+      setTimeout(() => {
+        window.lazyImage = LazyImage({
+          el: '.data'
+        })
+        window.lazyImage = LazyImage({
+          el: '#app',
+        })
+      })
     }
   </script>
-  <!-- <script src="./index.js"></script> -->
+  <script src="../xy-lazyimage.min.js"></script>
 </body>
 </html>

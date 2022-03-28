@@ -74,6 +74,7 @@ const map = [
 
 class LazyImage {
   constructor(options){
+    options = options || {}
     const el = options.el || ''
     this.wait = options.wait || 500
     this.el = util.querySelector(el)
@@ -129,4 +130,6 @@ class LazyImage {
   }
 }
 
-export default LazyImage
+export default function(...arg){
+  return new LazyImage(...arg)
+}
