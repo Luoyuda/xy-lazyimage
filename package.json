@@ -23,6 +23,6 @@
   "dependencies": {
   },
   "files": [
-    "bundle.js"
+    "xy-lazyimage.min.js"
   ]
 }

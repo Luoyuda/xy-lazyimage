@@ -7,7 +7,7 @@ export default {
   input: 'src/index.js',
   output: {
     name: 'LazyImage',
-    file: 'bundle.js',
+    file: 'xy-lazyimage.min.js',
     format: 'umd'
   },
   plugins: [
