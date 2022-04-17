@@ -10,7 +10,7 @@ function getEventFunc() {
       // 使用 setTimeout 做一个防抖
       let timeout
       // 监听
-      let observer = new IntersectionObserver((images) => {
+      const observer = new IntersectionObserver((images) => {
         activeImages.push(...images)
         if (timeout) clearTimeout(timeout)
         timeout = setTimeout(() => {
@@ -39,7 +39,7 @@ function getEventFunc() {
     func = function () {
       // 这里也做一个防抖
       let timeout = null
-      let load = () => {
+      const load = () => {
         if (timeout) clearTimeout(timeout)
         timeout = setTimeout(() => {
           this.images.forEach((image) => this.initImages(image))
@@ -180,7 +180,7 @@ class Lazy {
     if (dataSrc) {
       // 修改src
       image.setAttribute('src', dataSrc)
-      let load = () => {
+      const load = () => {
         // 初始化结束后从数组中清除该节点
         this.images = this.images.filter((img) => img !== image)
         image.removeAttribute('data-src')
